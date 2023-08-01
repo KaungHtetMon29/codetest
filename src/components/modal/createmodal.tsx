@@ -1,3 +1,4 @@
+// @ts-nocheck
 import teams from 'data.json'
 import { useRef } from 'react'
 function CreateModal({ func }: { func: any }) {

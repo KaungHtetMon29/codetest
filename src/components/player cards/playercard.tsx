@@ -4,9 +4,9 @@ import teams from 'data.json'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 
-function Playercard({ data, Tindex, index }: { data: string }) {
+function Playercard({ data, Tindex, index }) {
   const dispatch = useDispatch()
-  const players = useSelector((state) => state.add)
+  const players = useSelector((state: any) => state.add)
   const addfunc = () => {
     if (teams.teamsperplayer[Tindex] === undefined) {
       teams.teamsperplayer[Tindex] = [

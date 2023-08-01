@@ -1,8 +1,8 @@
 import teams from 'data.json'
 import { useRef } from 'react'
 function Updatedelete({ func }) {
-  const name = useRef()
-  const region = useRef()
+  const name = useRef(null)
+  const region = useRef(null)
   const update = ({}) => {}
   return (
     <div className=" bg-blue-800 flex flex-col gap-8 px-12 py-8 rounded-xl relative -left-1/2 z-50 ">

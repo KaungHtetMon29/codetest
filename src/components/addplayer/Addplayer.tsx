@@ -7,9 +7,9 @@ import { useSelector } from 'react-redux'
 import teams from 'data.json'
 
 function Addplayer() {
-  const add = useSelector((state) => state.add)
-  const addview = useSelector((state) => state.addview)
-  const viewteam = useSelector((state) => state.view)
+  const add = useSelector((state: any) => state.add)
+  const addview = useSelector((state: any) => state.addview)
+  const viewteam = useSelector((state: any) => state.view)
   const dispatch = useDispatch()
 
   useEffect(() => {

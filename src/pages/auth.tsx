@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { issigned } from 'components/action'
 import { useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 
 function Navbar({ load, mod }: { load: any; mod: any }) {
   const dispatch = useDispatch()
-  const view = useSelector((state) => state.view)
+  const view = useSelector((state: any) => state.view)
   return (
     <div className="flex justify-center gap-12 sticky top-0 bg-white py-6 z-50">
       <button

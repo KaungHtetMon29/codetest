@@ -3,16 +3,20 @@ import teams from 'data.json'
 import { useDispatch } from 'react-redux'
 import { addplayer, addview, del, update } from 'components/action'
 import { useSelector } from 'react-redux'
-function Teamcard({ data, index, func }: { data: string }) {
+
+function Teamcard({ data, index, func }) {
   const dispatch = useDispatch()
   const name = useRef()
   const region = useRef()
   const [edit, setedit] = useState(false)
+
   const adview = useSelector((state) => state.addview)
+
   const onsubmit = (index) => {
     dispatch(
       update({
         name: name.current.value,
+
         region: region.current.value,
         index: index
       })
